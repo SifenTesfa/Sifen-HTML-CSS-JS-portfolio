@@ -11,6 +11,6 @@ function toggleMenu() {
     subject : document.getElementById('subject').value,
     message : document.getElementById('message').value
   }
-  emailjs.send("service_service_7hg70qr","template_template_zfuruws",parms).then(alert("Email Sent!!"))
+  emailjs.send("service_service_l5qy8ho","template_template_4vq0x3f",parms).then(alert("Email Sent!!"))
  }
   
