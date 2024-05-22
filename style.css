@@ -74,13 +74,15 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
-  color: #fafafa;
+   
+    width:140px ;
+    height: 100px;
+   
+  
+
 }
 
-.logo:hover {
-  cursor: default;
-}
+
 
 /* HAMBURGER MENU */
 
