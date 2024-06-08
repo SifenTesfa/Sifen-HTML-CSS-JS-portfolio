@@ -11,16 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "sMCkUP9CKqsYNFqvd",
-      });
-   })();
-</script>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
@@ -220,7 +212,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SQL</h3>
+                  <h3>MySQL</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -386,31 +378,31 @@
       <p class="section__text__p1">Get in Touch</p>
       
       <h1 class="title">Contact Me</h1>
-      <form class="contact-form" id="contact-form";>
+      <form action="contact.php" method="post" id="contact-form">
         <div class="form-row">
-          <div class="form-field">
-            <input type="text" id='name'  placeholder="Full name" required>
-          </div>
-          <div class="form-field">
-            <input type="email" id="email"  placeholder="Your e-mail" required>
-          </div>
+            <div class="form-field">
+                <input type="text" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-field">
+                <input type="email" name="email" placeholder="Your e-mail" required>
+            </div>
         </div>
         <div class="form-row">
-          <div class="form-field">
-            <input type="text" id="subject" placeholder="Subject" required>
-          </div>
+            <div class="form-field">
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
         </div>
         <div class="form-row">
-          <div class="form-field">
-            <textarea name="message" id="message" placeholder="Message" required></textarea>
-          </div>
+            <div class="form-field">
+                <textarea name="message" placeholder="Message" required></textarea>
+            </div>
         </div>
         <div class="form-row">
-          <div class="form-field">
-            <button type="submit" onclick='sendMail();' id="submit">Send Mail</button>
-          </div>
+            <div class="form-field">
+                <button type="submit">Send Mail</button>
+            </div>
         </div>
-      </form>
+    </form>
     </section>
     <footer>
       
